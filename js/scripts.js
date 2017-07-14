@@ -1,5 +1,6 @@
 $(function(){
   $("#normal").click(function(){
+    $(".output ul li").remove();
     var number = $("#input").val();
     var pingPonged = pingPongNumberizer(number);
     for (i = 0; i < pingPonged.length; i++) {
@@ -8,6 +9,7 @@ $(function(){
   });
 
   $("#reversed").click(function(){
+    $(".output ul li").remove();
     var number = $("#input").val();
     var pingPonged = pingPongNumberizer(number, true);
     for (i = 0; i < pingPonged.length; i++) {
