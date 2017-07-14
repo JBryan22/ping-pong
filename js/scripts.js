@@ -2,12 +2,17 @@ $(function(){
   $("#normal").click(function(){
     var number = $("#input").val();
     var pingPonged = pingPongNumberizer(number);
-    $(".output").text(pingPonged);
+    for (i = 0; i < pingPonged.length; i++) {
+      $(".output ul").append("<li>" + pingPonged[i] + "</li>");
+    }
   });
+
   $("#reversed").click(function(){
     var number = $("#input").val();
     var pingPonged = pingPongNumberizer(number, true);
-    $(".output").text(pingPonged);
+    for (i = 0; i < pingPonged.length; i++) {
+      $(".output ul").append("<li>" + pingPonged[i] + "</li>");
+    }
   });
 });
 
