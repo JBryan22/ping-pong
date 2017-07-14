@@ -13,6 +13,8 @@ var pingPongNumberizer = function(number) {
   for (i = 1; i <= numberInt; i++) {
     if (i % 3 === 0) {
       returnArray.push('ping');
+    } else if (i % 5 === 0){
+      returnArray.push('pong');
     } else {
       returnArray.push(i);
     }
