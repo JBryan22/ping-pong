@@ -9,15 +9,25 @@ body {
 }
 
 h1 {
+  color:rgba(255, 255, 255, 0.85);
   text-align: center;
-  margin: 1.2em 0;
+  padding: 1.2em 0;
   font-size: 4em;
   font-weight: 300;
   letter-spacing: 3px;
+  margin:0;
+  background-image:url('../img/table-tennis.jpg');
+  background-repeat:no-repeat;
+  background-position: center;
+  background-size:cover;
 }
 
-ol, li {
-  margin-left:0.5em;
+ol {
+  margin-left:1em;
+}
+
+ul {
+  margin-left:1.4em;
 }
 
 section {
@@ -28,7 +38,10 @@ section {
 }
 
 main {
-  margin-top: 1px;
+  margin-top:0;
+  padding: 0 1em 0.5em 1em;
   margin-left: 25%;
   background-color: forestgreen;
+  position:absolute;
+  width:100%;
 }
