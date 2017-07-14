@@ -1,13 +1,17 @@
 $(function(){
-  $("#ping-pong-form").submit(function(event){
-    event.preventDefault();
+  $("#normal").click(function(){
     var number = $("#input").val();
     var pingPonged = pingPongNumberizer(number);
     $(".output").text(pingPonged);
   });
+  $("#reversed").click(function(){
+    var number = $("#input").val();
+    var pingPonged = pingPongNumberizer(number, true);
+    $(".output").text(pingPonged);
+  });
 });
 
-var pingPongNumberizer = function(number) {
+var pingPongNumberizer = function(number, reverse = false) {
   var numberInt = parseInt(number);
   var returnArray = [];
   for (i = 1; i <= numberInt; i++) {
@@ -21,5 +25,9 @@ var pingPongNumberizer = function(number) {
       returnArray.push(i)
     }
   }
-  return returnArray;
+  if (reverse) {
+    return returnArray.reverse();
+  } else {
+    return returnArray;
+  }
 }
