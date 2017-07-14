@@ -7,6 +7,7 @@
     crossorigin="anonymous"></script>
     <script src="js/scripts.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <meta charset="utf-8">
@@ -17,34 +18,49 @@
       <h1>Ping-Pong</h1>
     </header>
 
-    <section class="side-info">
-      <h3>About Ping Pong</h3>
-      <p class="about">Created by:</p>
-      <p>Jesse Bryan</p>
-      <p class="about">GitHub Username/URL:</p>
-      <p><a href="https://github.com/JBryan22">jbryan22</a></p>
-      <p class="about">Level 3 Test for:</p>
-      <p>Intro to Programming</p>
-    </section>
-
     <main>
-      <h2>Let's Play!</h2>
-      <h4>Rules:</h4>
-      <p>Ping Pong will count up to your number from 1 with the following exceptions:</p>
-      <ol>
-        <li>Numbers divisible by 3 become 'ping'</li>
-        <li>Numbers divisible by 5 become 'pong'</li>
-        <li>Numbers divisible for 15 become 'pingpong'</li>
-      </ol>
-        <label for="input">Enter your number here:</label>
-        <input id="input" type="number">
-        <button id="normal" class="buttons">Ping Pong!</button>
-        <button id="reversed" class="buttons">Ping Pong Reverse!</button>
-      <div class="output">
-        <ul>
+      <div class="playArea">
+        <div class="aboutme">
+          <a href="www.facebook.com/jesse.bryan2" target="_blank"><i class="fa fa-facebook-official fa-3x"></i></a>
+          <a href="https://github.com/JBryan22" target="_blank"> <i class="fa fa-github fa-3x"></i></a>
+          <a href="https://www.linkedin.com/in/jesse-bryan-0439aaa5" target="_blank"><i class="fa fa-linkedin-square fa-3x"></i></a>
+          <div class="text-center">
+              <p>Contact Me</p>
+          </div>
+        </div>
+        <h2>Let's Play!</h2>
+        <h4>Rules:</h4>
+        <p>Ping Pong will count up to your number from 1 with the following exceptions:</p>
+        <ol>
+          <li>1. Numbers divisible by 3 become 'ping'</li>
+          <li>2. Numbers divisible by 5 become 'pong'</li>
+          <li>3. Numbers divisible for 15 become 'pingpong'</li>
+        </ol>
+          <label for="input">Enter your number here:</label>
+          <input id="input" type="number">
+          <button id="normal" class="buttons">Ping Pong!</button>
+          <button id="reversed" class="buttons">Ping Pong Reverse!</button>
+        <div class="output">
+          <ul>
 
-        </ul>
+          </ul>
+        </div>
       </div>
     </main>
+
+    <!-- <div class="container">
+      <footer class="footer" id="contact">
+        <div class="container">
+          <div class="row text-center">
+            <a href="www.facebook.com/jesse.bryan2" target="_blank"><i class="fa fa-facebook-official fa-4x"></i></a>
+            <a href="https://github.com/JBryan22" target="_blank"> <i class="fa fa-github fa-4x"></i></a>
+            <a href="https://www.linkedin.com/in/jesse-bryan-0439aaa5" target="_blank"><i class="fa fa-linkedin-square fa-4x"></i></a>
+          </div>
+          <div class="text-center">
+              <p>Copyright &copy; Jesse Bryan</p>
+          </div>
+        </div>
+      </footer>
+    </div> -->
   </body>
 </html>

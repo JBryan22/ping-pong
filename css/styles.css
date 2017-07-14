@@ -6,59 +6,63 @@
 
 body {
   font-family: "Lato", "Helvetica Neue", sans-serif;
-  background-color: #85BDA6;
-}
-
-h1 {
-  color:white;
   text-align: center;
-  padding: 1em 0;
-  font-size: 5em;
-  font-weight: 300;
-  letter-spacing: 5px;
-  margin:0;
   background-image:linear-gradient(
     rgba(0, 0, 0, 0.3),
     rgba(0, 0, 0, 0.3)
     ),
     url('../img/table-tennis.jpg');
   background-repeat:no-repeat;
-  background-position: center;
+  background-position:center;
   background-size:cover;
-  border-bottom: 1px solid black;
+  background-attachment: fixed;
 }
 
-ol {
-  margin-left:1em;
+h1 {
+  color:white;
+  padding: 1em 0;
+  font-size: 5em;
+  font-weight: 300;
+  letter-spacing: 5px;
+  margin:0;
+
 }
 
-ul {
-  margin-left:1.4em;
-}
-
-section {
-  float:left;
-  width:25%;
-  height:100%;
-  padding-left: 2em;
-  background-color: #C0D7BB;
-  border-right: 1px solid black;
-  border-bottom: 1px solid black;
+button {
+  padding:3px;
+  border-radius: 15%;
 }
 
 main {
-  margin-top:0;
-  padding: 0 1em 0.5em 1em;
-  margin-left: 25%;
+  position: relative;
+  top: -1.4em;
+}
+
+.aboutme {
   position:absolute;
-  width:100%;
+  top: 1em;
+  right:1em;
+  z-index: 999;
 }
 
-.about {
-  font-size:1.3em;
-  color:#887880;
+.playArea {
+  position: relative;
+  margin:auto;
+  background-color: rgba(253, 242, 233, 0.7);
+  width:60%;
+  border-radius: 10px;
+  border: 2px solid white;
+  padding-bottom: 1em;
 }
 
-h3 {
-  color:black;
+ul, ol {
+  list-style-type: none;
+}
+
+a {
+  color:rgba(0, 0, 0, 0.4);
+}
+
+a:hover {
+  color:rgba(0, 0, 0, 0.8);
 }
